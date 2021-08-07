@@ -1,0 +1,6 @@
+# action.yml
+name: 'Mkdocs edu builder'
+description: 'Builds a Mkdocs website for HEIA-FR'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
