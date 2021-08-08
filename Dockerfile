@@ -1,10 +1,4 @@
-FROM python:3
-
-RUN apt-get update && apt-get install -y \
-  zip
-RUN  pip install --upgrade pip
-COPY requirements.txt /tmp/
-RUN pip install -r /tmp/requirements.txt
+FROM ghcr.io/heiafr-isc/mkdocs-edu-builder:latest
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
